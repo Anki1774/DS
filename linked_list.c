@@ -1,13 +1,10 @@
-	#include<stdio.h>
-//#include<iostream>
-//using namespace std;
+#include<stdio.h>
 
 struct node{
 	int data;
 	struct node *next;
 };
 
-//struct node *root=NULL;
 
 void append(struct node** ,int);
 void reverse(struct node** );
@@ -39,7 +36,7 @@ main()
 					printf("\n Enter value in the node:");
 					scanf("%d",&data);
 					append(&head,data);
-					printf("\n wanna enter more :");
+					printf("\n wanna enter more :(0-no,1-yes)");
 					scanf("%d",&ch);
 				   }while(ch!=0);
 				}break;
@@ -47,8 +44,6 @@ main()
 			case 2:
 			    {
 			    	display(&head);
-			    	printf("\n\n%d",&head);
-			    	printf("\n%d",&(head->next));
 			 	
 				 }break;
 			
